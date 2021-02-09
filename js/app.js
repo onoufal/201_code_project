@@ -127,27 +127,27 @@ if (guessNumber != rightNumber) {
 }
 
 let myCars = ['mercedes', 'bmw', 'toyota', 'mazda'];
-let guessCar;
-let car;
-let correctly = false
-
+let correctly = false;
 for (let i = 0; i < 6; i++) {
-  guessCar = prompt('guess the type of one of my cars!')
+  let guessCar = prompt('guess the type of one of my cars!')
   for (let j = 0; j < myCars.length; j++) {
-    car = myCars[j]
-    if (guessCar === car) {
-      alert('You got it!')
+    console.log(j);
+    if (guessCar === myCars[j]) {
+      console.log('heloooooooo');
+      alert('good job');
       score++
-      correctly = true
-      break
+      correctly = true;
+      break;
     }
+
   }
   if (correctly == true) {
     break // stop the 1st loop after the user guess correctly so the question doent prompy again
+  } else if (correctly == false) {
+    alert('Wrong answer!')
   }
 }
 
 
 
-alert(`Good job ${userName},your score is ${score}! Here is a short bio of mine 😉`)
-
+alert(`Good Job ${userName}! Your score is ${score}! Here is a short bio of mine..`)
