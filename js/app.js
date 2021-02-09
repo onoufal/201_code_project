@@ -1,5 +1,7 @@
 'use strict';
 
+let score = 0;
+
 let userName = prompt('Hi, What is your name?')
 let userDecision = prompt(`Welcome ${userName} to my guess me game, are you ready?`).toLowerCase()
 
@@ -7,6 +9,7 @@ switch (userDecision) {
   case 'yes':
   case 'y':
     alert('great! lets start then..')
+    score++
     break
   case 'no':
   case 'n':
@@ -23,6 +26,7 @@ if (userDecision === 'yes' || userDecision === 'y') {
     case 'yes':
     case 'y':
       alert('You are right! 👏')
+      score++
       break
     case 'no':
     case 'n':
@@ -46,6 +50,7 @@ switch (myStudy) {
   case 'no':
   case 'n':
     alert('You are right! 👏')
+    score++
     break
   default:
     alert('Invalid answer! 😒')
@@ -57,6 +62,7 @@ switch (myPet) {
   case 'yes':
   case 'y':
     alert('You are right! 👏')
+    score++
     break
   case 'no':
   case 'n':
@@ -72,6 +78,7 @@ switch (myGoal) {
   case 'yes':
   case 'y':
     alert('You are right! 👏')
+    score++
     break
   case 'no':
   case 'n':
@@ -87,6 +94,7 @@ switch (myDegree) {
   case 'yes':
   case 'y':
     alert('You are right! 👏')
+    score++
     break
   case 'no':
   case 'n':
@@ -96,4 +104,50 @@ switch (myDegree) {
     alert('Invalid answer! 😒')
 }
 
-alert(`Good job ${userName}, here is a short bio of mine 😉`)
+
+let rightNumber = 8;
+
+let guessNumber;
+
+for (let i = 0; i < 4; i++) {
+  guessNumber = Number(prompt('Guess the number!'))
+  if (guessNumber === rightNumber) {
+    alert('You are correct, the number is ' + rightNumber)
+    score++
+    break
+  } else if (guessNumber > rightNumber) {
+    alert('Your guess is too high!')
+  } else {
+    alert('Your guess is too low!')
+  }
+}
+
+if (guessNumber != rightNumber) {
+  alert('The Number is ' + rightNumber)
+}
+
+let myCars = ['mercedes', 'bmw', 'toyota', 'mazda'];
+let guessCar;
+let car;
+let correctly = false
+
+for (let i = 0; i < 6; i++) {
+  guessCar = prompt('guess the type of one of my cars!')
+  for (let j = 0; j < myCars.length; j++) {
+    car = myCars[j]
+    if (guessCar === car) {
+      alert('You got it!')
+      score++
+      correctly = true
+      break
+    }
+  }
+  if (correctly == true) {
+    break // stop the 1st loop after the user guess correctly so the question doent prompy again
+  }
+}
+
+
+
+alert(`Good job ${userName},your score is ${score}! Here is a short bio of mine 😉`)
+
