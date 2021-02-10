@@ -41,12 +41,11 @@
 
 //////////////////////////////////////////////////
 
-alert('welcome to my page');
+/* alert('welcome to my page');
 
 let score = 0;
 
 let userName = prompt('whats your name?');
-
 while (!userName) {
   userName = prompt('please enter your name')
 }
@@ -88,4 +87,60 @@ if (question2 === 'no' || question2 === 'n') {
 console.log(question2)
 
 console.log(score)
-alert('score is ' + score)
+alert('score is ' + score) 
+
+let grades = [99, 50, 100, 66, 89]
+
+console.log(grades)
+
+
+for (let i = 0; i < grades.length; i++) {
+  console.log(grades[i]);
+  grades[i] += 5;
+
+}
+
+console.log(grades) */
+
+
+function welcomeNessage() {
+  alert('hello to our page')
+}
+
+welcomeNessage();
+
+let userInput = prompt('wjats your name');
+
+console.log(userInput)
+
+function getName(userName) {
+  let output = 'hello ' + userName;
+  return output;
+}
+
+console.log(getName(userInput));
+console.log(getName('OSAMA'));
+
+function sqaure(length) {
+  let area = length ** 2;
+  let paremiter = length * 4;
+  return [area, paremiter]
+}
+
+function sumArray(num1, num2) {
+  let output = num1 + num2
+  return [output, num1, num2]
+}
+
+console.log(sumArray(9, 10)[1]);
+
+let getAge = function (year) {
+  let output = 2021 - year;
+  return output
+}
+
+alert(getAge(1990));
+alert(getAge(2001));
+
+
+
