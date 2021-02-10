@@ -14,3 +14,9 @@ I build an app with a direct and powerful purpose. It does all of the things tha
 ### Reflections and Comments
 * Consider including the answers to your daily journal and submission questions here
 * This is also a good place to reflect on the tools and resources used and learned
+
+## navigator
+### Osama Noufal
+
+## Driver
+### Hisham Khalil
