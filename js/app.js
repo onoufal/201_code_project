@@ -2,25 +2,31 @@
 
 let score = 0;
 
-let userName = prompt('Hi, What is your name?')
-let userDecision = prompt(`Welcome ${userName} to my guess me game, are you ready?`).toLowerCase()
+// first question
+function questionOne() {
+  let result = 0;
+  let userName = prompt('Hi, What is your name?')
+  let userDecision = prompt(`Welcome ${userName} to my guess me game, are you ready?`).toLowerCase()
 
-switch (userDecision) {
-  case 'yes':
-  case 'y':
-    alert('great! lets start then..')
-    score++
-    break
-  case 'no':
-  case 'n':
-    alert('Goodbye then!')
-    break
-  default:
-    alert('Invalid answer!')
+  switch (userDecision) {
+    case 'yes':
+    case 'y':
+      alert('great! lets start then..')
+      result = 1;
+      break
+    case 'no':
+    case 'n':
+      alert('Goodbye then!')
+      break
+    default:
+      alert('Invalid answer!')
+  }
+  return result;
 }
+score += questionOne();
+alert(score);
 
-
-if (userDecision === 'yes' || userDecision === 'y') {
+/*if (userDecision === 'yes' || userDecision === 'y') {
   let myAge = prompt('I am I older than 30?').toLowerCase()
   switch (myAge) {
     case 'yes':
@@ -148,6 +154,7 @@ for (let i = 0; i < 6; i++) {
   }
 }
 
+*/
 
 
-alert(`Good Job ${userName}! Your score is ${score}! Here is a short bio of mine..`)
+
