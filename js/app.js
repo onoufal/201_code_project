@@ -66,11 +66,11 @@ function questionTwo() {
 }
 questionTwo();
 
-function questionTree(){
+function questionTree() {
 
 
   let myPet = prompt('Am I a cat person?').toLowerCase()
-  
+
   switch (myPet) {
     case 'yes':
     case 'y':
@@ -88,10 +88,10 @@ function questionTree(){
 }
 questionTree();
 
-function questionFour(){
+function questionFour() {
 
   let myGoal = prompt('Do I want to be a professional web/software developer?').toLowerCase()
-  
+
   switch (myGoal) {
     case 'yes':
     case 'y':
@@ -110,11 +110,11 @@ function questionFour(){
 questionFour();
 
 
-function questionFive(){
+function questionFive() {
 
 
   let myDegree = prompt('Do I have an accounting degree?').toLowerCase()
-  
+
   switch (myDegree) {
     case 'yes':
     case 'y':
@@ -133,12 +133,12 @@ function questionFive(){
 questionFive();
 
 
-function questionSix(){
+function questionSix() {
 
   let rightNumber = 8;
-  
+
   let guessNumber;
-  
+
   for (let i = 0; i < 4; i++) {
     guessNumber = Number(prompt('Guess the number!'))
     if (guessNumber === rightNumber) {
@@ -151,7 +151,7 @@ function questionSix(){
       alert('Your guess is too low!')
     }
   }
-  
+
   if (guessNumber != rightNumber) {
     alert('The Number is ' + rightNumber)
   }
@@ -160,7 +160,7 @@ function questionSix(){
 questionSix();
 
 
-function questionSeven(){
+function questionSeven() {
 
   let myCars = ['mercedes', 'bmw', 'toyota', 'mazda'];
   let correctly = false;
@@ -175,7 +175,7 @@ function questionSeven(){
         correctly = true;
         break;
       }
-  
+
     }
     if (correctly == true) {
       break // stop the 1st loop after the user guess correctly so the question doent prompy again

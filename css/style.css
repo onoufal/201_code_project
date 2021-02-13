@@ -1,64 +1,71 @@
 h1 {
+  margin-left: 10px;
+  border-bottom-right-radius: 10px;
+  border-radius: 20px;
+  font-family: 'Hammersmith One', sans-serif;
   font-size: 30px;
-  padding: 20px;
-  font-weight: bold;
-  color: blueviolet;
+  padding: 12px;
+  color: rgb(9, 110, 18);
   margin-top: 30px;
-  background-color: coral;
+  background-color: rgb(231, 207, 199);
   width:200px;
   text-align: center;
 }
 
+
+
 li {
-  font-weight: bold;
-  font-size: 21px;
-  display: inline-block;
-  padding: 15px;
-  width: 100px;
-  text-align: center;
-  height: 10px; 
+  display: inline;
+ 
+  
 }
 
 a {
-  color: rgb(10, 87, 83);
-  text-decoration: none; 
-}
-
-li#home {
-  background-color: rgb(45, 236, 236);
-}
-li#about {
-  background-color: rgb(233, 236, 38);
-}
-li#help {
-  background-color: rgb(33, 231, 76);
-}
-li#contact {
-  background-color: rgb(238, 38, 55);
-}
-
-body {
-  background-color: darkgray;
+  padding-right: 20px;
+  color: brown;
+  font-size: 20px;
+  text-decoration: none;
 }
 
 ul {
-  margin-top: 30px;
+  background: rgb(4, 53, 70);
+  width: 360px;
+  padding: 15px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+
 }
 
-p#p1 {
-  margin-top: 30px;
-  font-size: 20px;
-  padding: 20px;
-  width: 700px; 
+a:hover {
+  color: aqua;
+  font-weight: bold;
+ 
 }
 
-p#p2 {
-  margin-top: 10px;
-  font-size: 20px;
-  padding: 10px;
-  padding-left: 20px;
-  width: 700px;
+
+
+
+body {
+  background-color: darkgray;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
+
+.box {
+  
+  font-size: 16px;
+  padding: 15px; 
+  text-align: justify;
+  display: inline-flex;
+  margin-right: auto;
+  width: 32.8%;
+  background: rgb(182, 182, 182);
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+
+
 
 footer {
   margin-top: 100px;
@@ -73,4 +80,9 @@ footer {
 
 #goal {
   font-style: italic;
+}
+
+#p2 {
+  margin: 10px;
+  font-size: 20px;
 }
